@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : com.zte.tdd:FibWork : FibWork-1.0.war (exploded)">
+    <output-path>$PROJECT_DIR$/out/artifacts/FibWork/exploded/FibWork-1.0.war</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="FibWork/web/Web Gradle : FibWork-1.0.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="FibWork" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: scala-library-2.10.3" />
+          <element id="library" level="project" name="Gradle: akka-actor_2.10-2.3.0" />
+          <element id="library" level="project" name="Gradle: scalatra_2.10-2.2.2" />
+          <element id="library" level="project" name="Gradle: config-1.2.0" />
+          <element id="library" level="project" name="Gradle: scalatra-common_2.10-2.2.2" />
+          <element id="library" level="project" name="Gradle: slf4j-api-1.7.5" />
+          <element id="library" level="project" name="Gradle: grizzled-slf4j_2.10-1.0.1" />
+          <element id="library" level="project" name="Gradle: rl_2.10-0.4.4" />
+          <element id="library" level="project" name="Gradle: juniversalchardet-1.0.3" />
+          <element id="library" level="project" name="Gradle: mime-util-2.1.3" />
+          <element id="library" level="project" name="Gradle: joda-time-2.2" />
+          <element id="library" level="project" name="Gradle: joda-convert-1.2" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/FibWork/exploded/FibWork-1.0.war/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

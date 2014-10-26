@@ -1,0 +1,30 @@
+apply plugin: 'war'
+
+sourceCompatibility = 1.5
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.scala-lang:scala-library:$scalaVersion"
+    compile "org.scalatra:scalatra_2.10:$scalatraVersion"
+    testCompile("org.scalatra:scalatra-scalatest_2.10:$scalatraVersion") {
+        exclude module: 'javax.servlet'
+    }
+}
+
+task copyMain << {
+    copy {
+        from 'build/classes/main/com/zte/logistic/Executable.class'
+        into 'src/main/webapp/com/zte/logistic'
+    }
+}
+
+war {
+    metaInf { from 'resources/META-INF'}
+    classpath = jar.outputs.files  + configurations.runtime
+}
+
+war.dependsOn copyMain
